@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="main.controller.HireController">
+   <children>
+      <HBox layoutX="92.0" layoutY="80.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="300.0" spacing="20.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </padding>
+               <children>
+                  <Text fx:id="roomIdText" strokeType="OUTSIDE" strokeWidth="0.0" text="Room ID: " />
+                  <Text fx:id="roomNameText" layoutX="26.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Name: " />
+                  <Text fx:id="roomTypeText" layoutX="26.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type: " />
+                  <Text fx:id="maxGuestsText" layoutX="26.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max Guests: " />
+                  <Text fx:id="maxKidsText" layoutX="26.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max Kids: " />
+                  <Text fx:id="costPerNightText" layoutX="26.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost Per Night: " />
+                  <Text fx:id="underMaintenanceText" layoutX="26.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Under Maintenance: " />
+                  <Text fx:id="availableText" layoutX="26.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available: " />
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="300.0" spacing="20.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </padding>
+               <children>
+                  <TextField fx:id="cusNameField" promptText="Customer Name" />
+                  <TextField fx:id="numOfGuestsField" layoutX="26.0" layoutY="26.0" promptText="Number Of Guests" />
+                  <TextField fx:id="numOfKidsField" layoutX="26.0" layoutY="72.0" promptText="Number Of Kids" />
+                  <TextField fx:id="depositField" layoutX="26.0" layoutY="118.0" promptText="Deposit" />
+                  <Button fx:id="completeHigherButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="297.0" style="-fx-background-color: #ffffff; -fx-border-color: #22adf4;" text="Complete" textFill="#22adf4" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="32.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

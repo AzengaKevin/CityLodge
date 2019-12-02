@@ -1,0 +1,7 @@
+Room Pace Setter, 10, 10, 10000.0, false, This is best best, though its just a trial, false, Standard Room, file:/home/azenga/NetBeansProjects/CityLodge/images/done.jpg
+Hire Brandon Stack, 5000.0, 2019-10-18 12:25:21, null, 5, 5
+Room Runners Up Room, 7, 3, 36500.75, true, This is one of the best rooms in the building. Everybody who has ever hired liked it, false, Suite, file:/home/azenga/NetBeansProjects/CityLodge/images/runnersup.jpg
+Room Third Room, 10, 20, 50573.85, false, It is the largest room in the building, has 4 king sized beds, six queen sized beds  and other small beds which we assume are for minors, true, Standard Room, file:/home/azenga/NetBeansProjects/CityLodge/images/thirdroom.jpgRoom Pace Setter, 10, 10, 10000.0, false, This is best best, though its just a trial, false, Standard Room, file:/home/azenga/NetBeansProjects/CityLodge/images/done.jpg
+Hire Brandon Stack, 5000.0, 2019-10-18 12:25:21, null, 5, 5
+Room Runners Up Room, 7, 3, 36500.75, true, This is one of the best rooms in the building. Everybody who has ever hired liked it, false, Suite, file:/home/azenga/NetBeansProjects/CityLodge/images/runnersup.jpg
+Room Third Room, 10, 20, 50573.85, false, It is the largest room in the building, has 4 king sized beds, six queen sized beds  and other small beds which we assume are for minors, true, Standard Room, file:/home/azenga/NetBeansProjects/CityLodge/images/thirdroom.jpg

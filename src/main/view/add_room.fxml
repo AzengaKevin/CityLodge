@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rooPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.AddRoomController">
+    <stylesheets>
+        <URL value="@/main/res/main.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="132.0" layoutY="117.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="roomNameField" promptText="Room Name">
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" top="16.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" top="16.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fx:id="avatarImageView" fitHeight="96.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/noimage-small.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="108.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="chooseImageButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="111.0" text="Choose Image" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets bottom="16.0" left="8.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="saveImageButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="111.0" text="Save Image" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets left="8.0" />
+                                 </VBox.margin></Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label fx:id="savedFileNameLabel" prefHeight="18.0" prefWidth="269.0" style="-fx-background-color: #ccc;" text="Label">
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" top="16.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="roomTypeCombobox" prefHeight="28.0" prefWidth="278.0" promptText="Room Type">
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" top="16.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <CheckBox fx:id="underMaintenanceCheckBox" mnemonicParsing="false" prefHeight="26.0" prefWidth="295.0" text="Under Maintenance">
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" top="16.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="availableCheckBox" layoutX="26.0" layoutY="279.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="295.0" text="Available For Hire">
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" top="16.0" />
+                     </VBox.margin>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="costPerNightField" promptText="Cost Per Night" />
+                  <TextField fx:id="maxGuestsField" layoutX="26.0" layoutY="26.0" promptText="Maximum Guests">
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="maxKidsField" layoutX="26.0" layoutY="68.0" promptText="Maximum KIds">
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ScrollPane>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                     <content>
+                        <TextArea fx:id="descriptionTextArea" prefHeight="128.0" prefWidth="268.0" promptText="Room Description" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextArea>
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="addRoomButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="289.0" text="Add Room">
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

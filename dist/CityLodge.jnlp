@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CityLodge.jnlp">
+  <information>
+    <title>CityLodge</title>
+    <vendor>azenga</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CityLodge.jar" size="40780" download="eager" />
+    <jar href="lib/sqlite-jdbc-3.27.2.1.jar" size="6012107" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CityLodge" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="main.Launcher"  name="CityLodge" />
+  <update check="always"/>
+</jnlp>
